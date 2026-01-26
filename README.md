@@ -7,15 +7,20 @@
 Titlovi Browser is a comprehensive Enigma2 plugin for browsing movies, TV series, and subtitles from Titlovi.com - the largest subtitle portal for Balkan languages.
 
 ## 📸 Screenshots
-*(https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-1.jpg)*
-*(https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-4.jpg)*
-*(https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-6.jpg)*
-*(https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-8.jpg)*
-*(https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-9.jpg)*
+![TitloviBrowser](https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-1.jpg)
+![TitloviBrowser](https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-4.jpg)
+![TitloviBrowser](https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-6.jpg)
+![TitloviBrowser](https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-8.jpg)
+![TitloviBrowser](https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-9.jpg)
 
-| Menu | Search simple | Search result  | Movies  |
-|-------------|----------|----------------|-----------------|
-| ![Menu](https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-2.jpg) | ![search simple](https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-7.jpg) |
+| Menu | Search simple |
+|-------------|----------|
+| ![Menu](https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-2.jpg) | ![search simple](https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-3.jpg) |
+
+| Search result  | Movies  |
+|----------------|-----------------|
+
+| ![Menu](https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-5.jpg) | ![search simple](https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-7.jpg) |
 ## ✨ Features
 
 ### 🎥 Movies & TV Shows
