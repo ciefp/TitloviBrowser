@@ -144,22 +144,22 @@ git clone https://github.com/yourusername/TitloviBrowser.git
 # Test and debug using Enigma2 logs
 ```
 
-📄 License
+## 📄 License
 This project is licensed under the GNU General Public License v3.0 - see the LICENSE file for details.
 
-❤️ Acknowledgments
+## ❤️ Acknowledgments
 Titlovi.com for providing the content
 Enigma2 community for support and testing
 Open source contributors
 All beta testers
 
-📞 Support
+## 📞 Support
 Need Help?
 Documentation: Check this README first
 Issues: Use GitHub Issues for bug reports
 Discussions: GitHub Discussions for questions
 
-Compatibility:
+## Compatibility:
 Tested on:
 Vu+ Zero 4K
 Dreambox DM920
@@ -168,12 +168,12 @@ Zgemma H9.2H
 
 Should work on all Enigma2 receivers with Python3 support.
 
-📊 Statistics
+## 📊 Statistics
 Plugin Size: ~500KB
 Memory Usage: ~20-50MB
 Cache Size: Configurable (default 20MB)
 Supported Languages: 7 subtitle languages
 Note: This is the first stable release. Please report any issues you encounter for quicker fixes in future updates.
 
-Enjoy your movies with perfect subtitles! 🎬✨
+# Enjoy your movies with perfect subtitles! 🎬✨
 
