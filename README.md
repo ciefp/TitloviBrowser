@@ -19,7 +19,6 @@ Titlovi Browser is a comprehensive Enigma2 plugin for browsing movies, TV series
 
 | Search result  | Movies  |
 |----------------|-----------------|
-
 | ![Menu](https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-5.jpg) | ![search simple](https://github.com/ciefp/TitloviBrowser/blob/main/titlovibrowser-7.jpg) |
 ## ✨ Features
 
