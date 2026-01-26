@@ -79,6 +79,7 @@ Copy wget link to telnet
 - Minimum 50MB free space
 
 ### File Structure
+```bash
 TitloviBrowser/
 ├── plugin.py # Main plugin file
 ├── parser.py # Web scraping module
@@ -86,7 +87,7 @@ TitloviBrowser/
 ├── icon.png # Plugin icon
 ├── background.png # Background image
 └── README.md # This file
-
+```
 
 ### Cache Management
 The plugin caches:
