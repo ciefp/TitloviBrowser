@@ -155,9 +155,9 @@ This project is licensed under the GNU General Public License v3.0 - see the LIC
 
 ## 📞 Support
 Need Help?
-Documentation: Check this README first
-Issues: Use GitHub Issues for bug reports
-Discussions: GitHub Discussions for questions
+- Documentation: Check this README first
+- Issues: Use GitHub Issues for bug reports
+- Discussions: GitHub Discussions for questions
 
 ## Compatibility:
 Tested on:
