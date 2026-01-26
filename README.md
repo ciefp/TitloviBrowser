@@ -150,8 +150,8 @@ This project is licensed under the GNU General Public License v3.0 - see the LIC
 ## ❤️ Acknowledgments
 - Titlovi.com for providing the content
 - Enigma2 community for support and testing
-Open source contributors
-All beta testers
+- Open source contributors
+- All beta testers
 
 ## 📞 Support
 Need Help?
