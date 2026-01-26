@@ -192,5 +192,5 @@ Should work on all Enigma2 receivers with Python3 support.
 
 Note: This is the first stable release. Please report any issues you encounter for quicker fixes in future updates.
 
-# Enjoy your movies with perfect subtitles! 🎬✨
+# Enjoy your movies with perfect subtitles! 🎬✨ Titlovi.com
 
