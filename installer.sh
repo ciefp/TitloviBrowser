@@ -4,7 +4,7 @@
 ######### Only This 2 lines to edit with new version ######
 version='1.1'
 changelog='\nFix little bugs\nUpdated Picons List'
-##############################################################
+###########################################################
 
 TMPPATH=/tmp/TitloviBrowser
 
@@ -14,85 +14,86 @@ else
 	PLUGINPATH=/usr/lib64/enigma2/python/Plugins/Extensions/TitloviBrowser
 fi
 
-# check depends packges
-if [ -f /var/lib/dpkg/status ]; then
-   STATUS=/var/lib/dpkg/status
-   OSTYPE=DreamOs
-else
-   STATUS=/var/lib/opkg/status
-   OSTYPE=Dream
-fi
+# OE2.0 koristi opkg status
+STATUS=/var/lib/opkg/status
+OSTYPE=Dream
+
 echo ""
+# Detect Python major version
 if python --version 2>&1 | grep -q '^Python 3\.'; then
 	echo "You have Python3 image"
 	PYTHON=PY3
 	Packagesix=python3-six
 	Packagerequests=python3-requests
+	Packagebs4=python3-beautifulsoup4
 else
 	echo "You have Python2 image"
 	PYTHON=PY2
 	Packagerequests=python-requests
+	Packagebs4=python-beautifulsoup4
 fi
 
-if [ $PYTHON = "PY3" ]; then
-	if grep -qs "Package: $Packagesix" cat $STATUS ; then
-		echo ""
+# Install six only for Python3 images
+if [ "$PYTHON" = "PY3" ]; then
+	if grep -qs "Package: $Packagesix" "$STATUS" ; then
+		echo "OK: $Packagesix already installed"
 	else
-		opkg update && opkg install python3-six
+		echo "Installing: $Packagesix"
+		opkg update && opkg install "$Packagesix"
 	fi
 fi
+
 echo ""
-if grep -qs "Package: $Packagerequests" cat $STATUS ; then
-	echo ""
+# Install requests
+if grep -qs "Package: $Packagerequests" "$STATUS" ; then
+	echo "OK: $Packagerequests already installed"
 else
 	echo "Need to install $Packagerequests"
-	echo ""
-	if [ $OSTYPE = "DreamOs" ]; then
-		apt-get update && apt-get install python-requests -y
-	elif [ $PYTHON = "PY3" ]; then
-		opkg update && opkg install python3-requests
-	elif [ $PYTHON = "PY2" ]; then
-		opkg update && opkg install python-requests
-	fi
+	opkg update && opkg install "$Packagerequests"
 fi
+
+echo ""
+# Install BeautifulSoup4 (bs4)
+if grep -qs "Package: $Packagebs4" "$STATUS" ; then
+	echo "OK: $Packagebs4 already installed"
+else
+	echo "Need to install $Packagebs4"
+	opkg update && opkg install "$Packagebs4"
+fi
+
 echo ""
 
 ## Remove tmp directory
-[ -r $TMPPATH ] && rm -f $TMPPATH > /dev/null 2>&1
+[ -r "$TMPPATH" ] && rm -rf "$TMPPATH" > /dev/null 2>&1
 
 ## Remove old plugin directory
-[ -r $PLUGINPATH ] && rm -rf $PLUGINPATH
+[ -r "$PLUGINPATH" ] && rm -rf "$PLUGINPATH"
 
 # Download and install plugin
-# check depends packges
-mkdir -p $TMPPATH
-cd $TMPPATH
+mkdir -p "$TMPPATH"
+cd "$TMPPATH" || exit 1
 set -e
-if [ -f /var/lib/dpkg/status ]; then
-   echo "# Your image is OE2.5/2.6 #"
-   echo ""
-   echo ""
-else
-   echo "# Your image is OE2.0 #"
-   echo ""
-   echo ""
-fi
-   wget https://github.com/ciefp/TitloviBrowser/archive/refs/heads/main.tar.gz
-   tar -xzf main.tar.gz
-   cp -r 'TitloviBrowser-main/usr' '/'
+
+echo "# Your image is OE2.0 #"
+echo ""
+
+wget https://github.com/ciefp/TitloviBrowser/archive/refs/heads/main.tar.gz
+tar -xzf main.tar.gz
+cp -r 'TitloviBrowser-main/usr' '/'
+
 set +e
-cd
+cd /
 sleep 2
 
 ### Check if plugin installed correctly
-if [ ! -d $PLUGINPATH ]; then
+if [ ! -d "$PLUGINPATH" ]; then
 	echo "Some thing wrong .. Plugin not installed"
 	exit 1
 fi
 
-rm -rf $TMPPATH > /dev/null 2>&1
+rm -rf "$TMPPATH" > /dev/null 2>&1
 sync
-echo ""
+
 echo ""
 echo "#########################################################"
 echo "#         TitloviBrowser INSTALLED SUCCESSFULLY         #"
