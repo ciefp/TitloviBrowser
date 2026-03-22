@@ -101,9 +101,8 @@ echo ""
 echo "#########################################################"
 echo "#         TitloviBrowser INSTALLED SUCCESSFULLY         #"
 echo "#                  developed by ciefp                   #"
-echo "#                   Big thanks Qu4k3                    #"
-echo "#                  .::ciefpsettings::.                  #"
-echo "#                  https://Sat-Club.EU                  #"
+echo "#                  .::CiefpSettings::.                  #"
+echo "#                https://github.com/ciefp               #"
 echo "#########################################################"
 
 # Only restart if SKIP_REBOOT is not set to 1
