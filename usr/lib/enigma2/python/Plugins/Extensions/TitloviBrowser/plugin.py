@@ -88,7 +88,7 @@ PLUGIN_NAME = "Titlovi Browser"
 PLUGIN_VERSION = "1.0"
 PLUGIN_PATH = os.path.dirname(__file__)
 PLUGIN_DIR = os.path.dirname(__file__) if '__file__' in globals() else "/usr/lib/enigma2/python/Plugins/Extensions/TitloviBrowser"
-BACKGROUND = os.path.join(PLUGIN_DIR, "background.png")
+BACKGROUND = os.path.join(PLUGIN_DIR, "titlovi.png")
 
 # Na početku plugin.py, NAKON import-a, a PRE klasa:
 
